@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contest_item_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:elevation="4dp">
+
+    <!-- Logo + Contest Details Side-by-Side -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Platform Logo on Left -->
+        <ImageView
+            android:id="@+id/platformLogo"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Contest Info on Right -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contestName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contestDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#CCCCCC"
+                android:fontFamily="@font/albert_sans"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/contestTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/albert_sans"
+                android:text="Time"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/countdownText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/albert_sans"
+                android:text="Starts in: --"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Reminder Button aligned right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/moreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="More Info"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_marginRight="180dp"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/reminderIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bell"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Set Reminder"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookmarkLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contest_item_bg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Filter Buttons -->
+    <LinearLayout
+        android:id="@+id/filterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/filterAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#2C2C2C" />
+
+        <Button
+            android:id="@+id/filterPlatform"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Platform"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="#2C2C2C" />
+
+        <Button
+            android:id="@+id/filterContest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contest"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#2C2C2C"/>
+    </LinearLayout>
+
+    <!-- Bookmarks List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookmarkRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/home_menu"
+        app:labelVisibilityMode="labeled" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/contest_item_bg"
+    android:padding="12dp"
+    android:layout_width="400dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/problemName1"
+        android:text="A. Two Numbers"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/bookmarkIcon"
+        android:layout_marginStart="320dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bookmark" />
+
+    <TextView
+        android:id="@+id/problemDifficulty1"
+        android:text="★ "
+        android:textColor="#FFD700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/problemTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:fontFamily="@font/anek_latin_semibold"
+            android:maxLines="3"
+            android:paddingTop="4dp"
+            android:singleLine="false"
+            android:text="Tags: dp, greedy"
+            android:textColor="#BBBBBB"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
