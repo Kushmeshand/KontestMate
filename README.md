@@ -1,0 +1,1 @@
+KontestMate is a competitive programming companion app for tracking contests, solving problems, and monitoring progress across platforms like LeetCode, Codeforces, and CodeChef. It provides daily POTD (Problem of the Day), reminders for upcoming contests, and allows bookmarking problems for practice.
